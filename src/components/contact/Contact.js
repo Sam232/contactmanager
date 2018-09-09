@@ -21,7 +21,7 @@ class Contact extends Component {
     }    
 
     try{
-      await axios.delete(`http://jsonplaceholder.typicode.com/users/${id}`);      
+      await axios.delete(`https://jsonplaceholder.typicode.com/users/${id}`);      
       dispatch(action);   
     }
     catch(e){

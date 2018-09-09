@@ -57,7 +57,7 @@ class UpdateContact extends Component{
     }
 
     try{
-      const response = await axios.put(`http://jsonplaceholder.typicode.com/users/${user.id}`, user);
+      const response = await axios.put(`https://jsonplaceholder.typicode.com/users/${user.id}`, user);
       if(response.data){
         this.setState({
           validation: {

@@ -62,7 +62,7 @@ class AddContact extends Component {
 
     const { dispatch } = value;
 
-    const response = await axios.post("http://jsonplaceholder.typicode.com/posts", this.state);
+    const response = await axios.post("https://jsonplaceholder.typicode.com/posts", this.state);
     const action = {
       type: "ADD_CONTACT",
       payload: response.data
