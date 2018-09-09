@@ -104,7 +104,7 @@ class UpdateContact extends Component{
   async componentDidMount(){
     const userId = this.props.match.params.id;
     try{
-      const response = await axios.get(`http://jsonplaceholder.typicode.com/users/${userId}`);
+      const response = await axios.get(`https://jsonplaceholder.typicode.com/users/${userId}`);
       const { id, name, email, phone } = response.data;
       this.setState({
         user: {
